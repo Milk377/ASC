@@ -1,0 +1,81 @@
+def reward_function(params):
+    '''
+    Example of rewarding the agent to follow center line
+    '''
+    
+    # Read input parameters
+    track_width = params['track_width']
+    distance_from_center = params['distance_from_center']
+    
+    # Calculate 3 marks that are farther and father away from the center line
+    marker_1 = 0.1 * track_width
+    marker_2 = 0.125 * track_width
+    marker_3 = 0.150* track_width
+    marker_4 = 0.175* track_width
+    marker_5 = 0.2* track_width
+    marker_6 = 0.225* track_width
+    marker_7 = 0.250* track_width
+    marker_8 = 0.275* track_width
+    marker_9 = 0.3* track_width
+    marker_10 = 0.325* track_width
+    marker_11 = 0.350* track_width
+    marker_12 = 0.375* track_width
+    marker_13 = 0.4* track_width
+    marker_14 = 0.425* track_width
+    marker_15 = 0.45* track_width
+    marker_16 = 0.475* track_width
+    marker_17 = 0.48* track_width
+    marker_18 = 0.49* track_width
+    marker_19 = 0.495* track_width
+    marker_20 = 0.5* track_width
+    
+    # Give higher reward if the car is closer to center line and vice versa
+    if distance_from_center <= marker_1:
+        reward = 1.0
+    elif distance_from_center <= marker_2:
+        reward = 
+    elif distance_from_center <= marker_3:
+        reward = 
+    elif distance_from_center <= marker_4:
+        reward = 
+    elif distance_from_center <= marker_5:
+        reward = 
+    elif distance_from_center <= marker_6:
+        reward = 
+    elif distance_from_center <= marker_7:
+        reward = 
+    elif distance_from_center <= marker_8:
+        reward = 
+    elif distance_from_center <= marker_9:
+        reward = 
+    elif distance_from_center <= marker_10:
+        reward =
+    elif distance_from_center <= marker_11:
+        reward = 
+    elif distance_from_center <= marker_12:
+        reward = 
+    elif distance_from_center <= marker_13:
+        reward = 
+    elif distance_from_center <= marker_14:
+        reward = 
+    elif distance_from_center <= marker_15:
+        reward = 
+    elif distance_from_center <= marker_16:
+        reward = 
+    elif distance_from_center <= marker_17:
+        reward = 
+    elif distance_from_center <= marker_18:
+        reward = 
+    elif distance_from_center <= marker_19:
+        reward =
+    elif distance_from_center <= marker_20:
+        reward = 
+        
+        
+        
+        
+    else:
+        reward = 1e-3  # likely crashed/ close to off track
+
+    
+    return float(reward)
